@@ -1,5 +1,3 @@
-# AI-Health-Monitoring
-based health data classifier using Python
 # AI-Based Health Monitoring Smart T-Shirt
 
 A wearable-sensor health monitoring project that detects abnormal health patterns using machine learning.
@@ -8,24 +6,23 @@ A wearable-sensor health monitoring project that detects abnormal health pattern
 Sensor data from a wearable T-shirt is collected through an Arduino data-acquisition layer. A Python ML pipeline classifies the readings and flags abnormal patterns, reaching 90%+ accuracy.
 
 ## Tech Stack
-- Python ([libraries you used, e.g. scikit-learn, pandas])
+- Python (data processing and the ML classifier)
 - Arduino (sensor data acquisition)
-- Machine Learning ([model you used])
+- Machine Learning (classification of normal vs abnormal readings)
 
 ## Sensors / Data
-[Which sensors you read, e.g. heart rate, temperature] and [how the data was collected or what dataset you used].
+Wearable sensors connected to an Arduino collect health readings, which are then passed to the Python model for classification.
 
 ## How it works
 1. Sensors send readings through the Arduino.
-2. Data is cleaned and prepared in Python.
-3. The [model name] classifies each reading as normal or abnormal.
+2. The data is cleaned and prepared in Python.
+3. The ML model classifies each reading as normal or abnormal.
 
 ## How to run
-pip install -r requirements.txt
-python main.py
+Run main.py with Python.
 
 ## Results
-Accuracy: 90%+ on [test data description].
+90%+ accuracy in detecting abnormal health patterns.
 
 ## Author
 Spoorthi V
