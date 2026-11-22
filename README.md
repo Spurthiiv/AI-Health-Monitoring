@@ -1,28 +1,26 @@
 # AI-Based Health Monitoring Smart T-Shirt
 
-A wearable-sensor health monitoring project that detects abnormal health patterns using machine learning.
+A Python health-data classifier that flags abnormal vital signs using the K-Nearest Neighbours (KNN) algorithm, built as part of a smart T-shirt health monitoring project.
 
 ## Overview
-Sensor data from a wearable T-shirt is collected through an Arduino data-acquisition layer. A Python ML pipeline classifies the readings and flags abnormal patterns, reaching 90%+ accuracy.
+The classifier takes heart rate, body temperature and SpO2 as input and labels each reading as normal or abnormal. It is written in plain Python with no external libraries.
 
-## Tech Stack
-- Python (data processing and the ML classifier)
-- Arduino (sensor data acquisition)
-- Machine Learning (classification of normal vs abnormal readings)
-
-## Sensors / Data
-Wearable sensors connected to an Arduino collect health readings, which are then passed to the Python model for classification.
+## Data
+A simulated dataset of 100 readings, generated with a fixed random seed. A reading is labelled abnormal if heart rate > 95, temperature > 100.5, or SpO2 < 92.
 
 ## How it works
-1. Sensors send readings through the Arduino.
-2. The data is cleaned and prepared in Python.
-3. The ML model classifies each reading as normal or abnormal.
+1. Generate the simulated dataset.
+2. Split it into training and test sets (80/20).
+3. Classify each test reading with KNN and measure accuracy.
 
 ## How to run
-Run main.py with Python.
+python main.py (Python 3, no extra libraries needed)
 
 ## Results
-90%+ accuracy in detecting abnormal health patterns.
+Accuracy is printed when the program runs.
+
+## Note
+Evaluated on simulated data, not clinical data.
 
 ## Author
 Spoorthi V
